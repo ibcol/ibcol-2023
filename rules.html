@@ -32,7 +32,76 @@
 
 <br>
 <br>
-    
+<style>
+  .card-body *:not(.text-danger) {
+      color: black;
+  }
+</style>
+<!--
+<div class="container">
+  <div class="row g-3 mt-5 mb-5">
+      <div class="col-md-4">
+          <div class="card">
+              <div class="card-img-top image-card image-card-1">
+                  <img src="../gp2.jpeg" alt="Image 1">
+              </div>
+              <div class="card-body">
+                  <span class="text-uppercase text-danger fw-bold fs-6">Category</span>
+                  <h6 class="card-title text-dark mt-2">What you want to know about hubspot?</h6>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+                  <a href="#" class="text-dark">Read full story...</a>
+                  <div class="mt-4 about d-flex justify-content-between align-items-center">
+                      <span>By Prabhjot Singh</span>
+                      <span>On 12 Oct, 2020</span>
+                      <span>5 min read</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card">
+              <div class="card-img-top image-card image-card-2">
+                  <img src="../gp3.jpeg" alt="Image 2">
+              </div>
+              <div class="card-body">
+                  <span class="text-uppercase text-danger fw-bold fs-6">Category</span>
+                  <h6 class="card-title text-dark mt-2">What you want to know about hubspot?</h6>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+                  <a href="#" class="text-dark">Read full story...</a>
+                  <div class="mt-4 about d-flex justify-content-between align-items-center">
+                      <span>By Prabhjot Singh</span>
+                      <span>On 12 Oct, 2020</span>
+                      <span>5 min read</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card">
+              <div class="card-img-top image-card image-card-3">
+                  <img src="../gp5.jpeg" alt="Image 3">
+              </div>
+              <div class="card-body">
+                  <span class="text-uppercase text-danger fw-bold fs-6">Category</span>
+                  <h6 class="card-title text-dark mt-2">What you want to know about hubspot?</h6>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+                  <a href="#" class="text-dark">Read full story...</a>
+                  <div class="mt-4 about d-flex justify-content-between align-items-center">
+                      <span>By Prabhjot Singh</span>
+                      <span>On 12 Oct, 2020</span>
+                      <span>5 min read</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+
+
 
     <!-- Demo header-->
 
@@ -44,9 +113,12 @@
             <div class="col-md-3">
                 <!-- Tabs nav -->
                 <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a class="nav-link mb-3 p-3 shadow active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                    <a class="nav-link mb-3 p-3 shadow active" id="v-pills-wel-tab" data-toggle="pill" href="#v-pills-wel" role="tab" aria-controls="v-pills-wel" aria-selected="true">
                         
-                        <span class="font-weight-bold small text-uppercase">Individual Eligibility</span></a>
+                        <span class="font-weight-bold small text-uppercase">Welcome</span></a>
+                    <a class="nav-link mb-3 p-3 shadow " id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="false">
+                        
+                    <span class="font-weight-bold small text-uppercase">Individual Eligibility</span></a>    
 
                     <a class="nav-link mb-3 p-3 shadow " id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
                         
@@ -58,17 +130,17 @@
 
                     <a class="nav-link mb-3 p-3 shadow " id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
                         
-                        <span class="font-weight-bold small text-uppercase">Submission Requirements and Deadlines</span></a>
+                        <span class="font-weight-bold small text-uppercase">Submission Requirements</span></a>
 
 
 
                         <a class="nav-link mb-3 p-3 shadow " id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="false">
                         
-                            <span class="font-weight-bold small text-uppercase">Submission Material Specifications</span></a>
+                            <span class="font-weight-bold small text-uppercase">Evaluation Criteria</span></a>
     
                         <a class="nav-link mb-3 p-3 shadow " id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">
                             
-                            <span class="font-weight-bold small text-uppercase">Criteria for Material Submissions</span></a>
+                            <span class="font-weight-bold small text-uppercase">Key Dates</span></a>
     
                             <a class="nav-link mb-3 p-3 shadow " id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">
                             
@@ -83,7 +155,22 @@
             <div class="col-md-9">
                 <!-- Tabs content -->
                 <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade shadow rounded bg-white show active p-5" style="color: black;" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+
+                  <div class="tab-pane fade shadow rounded bg-white show active p-5" style="color: black;" id="v-pills-wel" role="tabpanel" aria-labelledby="v-pills-wel-tab">
+                    
+                    <h4 class="font-italic mb-4" style="color: black;">Welcome to the International Blockchain Olympiad 2023 in Amsterdam!</h4>
+                    <p class="font-italic text-muted mb-4">Get ready to showcase your skills and compete with blockchain enthusiasts from around the world!</p>
+                    <img src="https://images.unsplash.com/photo-1459679749680-18eb1eb37418?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Amsterdam" style="width: 100%; max-width: 500px; height: auto; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+                    <p class="mt-4">Amsterdam, known for its picturesque canals and vibrant culture, will be the host city for this prestigious event. Join us for an exciting journey where innovation and blockchain technology collide.</p>
+                    <p>Don't miss this opportunity to be part of a global community of blockchain enthusiasts and make a lasting impact in the world of decentralized technology.</p>
+                    
+                    
+                </div>
+
+
+
+
+                    <div class="tab-pane fade shadow rounded bg-white show p-5" style="color: black;" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                         <h4 class="font-italic mb-4" style="color: black;">Individual Eligibility</h4>
                         <p class="font-italic text-muted mb-2"><ol class="mb-2" style="list-style:decimal;padding-left:20px;">
                             <li><b>Students only:</b> Any current or recent student may register as a contestant.</li>
@@ -111,7 +198,7 @@
                     </div>
                     
                     <div class="tab-pane fade shadow rounded bg-white p-5" style="color: black;" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                        <h4 class="font-italic mb-4">Projecct Eligibility</h4>
+                        <h4 class="font-italic mb-4">Project Eligibility</h4>
                         <p class="font-italic text-muted mb-2"><ol class="mb-2" style="list-style:decimal;padding-left:20px;">
                             <li><b>One Team, One Project:</b> A team may submit only one project.</li>
                             <li><b>Project Category:</b> Select up to three categories that describe your project, according to the 17 Sustainable Development Goals (SDG) of the United Nations (UN). The Organising Committee reserves the right to assign categories of the project.</li>
@@ -126,25 +213,20 @@
 
                             <p>
                                 To compete in IBCOL 2023, registration is required for the individual, the team, and the project. To register, submit the information to the three <a href="registrar.html">Registrars</a>.<br><br>
-
-                                <b>Country/Territory with Competitions Committee</b> <br>
-                                Additionally, if your country or territory has a National Blockchain Olympiad Committee, contestants shall submit their materials directly to the committee, which would adjudicate proposals submitted within that country or territory, and nominate teams for IBCOL 2023. The National Committee shall submit a list of nominations to IBCOL 2023 Organising Committee.<br><br>
-
-                                <b>Country/Territory without Competitions Committee</b> <br>
-                                Additionally, if your country or territory does not have a National Blockchain Olympiad Committee, contestants shall submit their materials directly to the IBCOL Committee for screening via the IBCOL website. The submission may attach official nomination letter from their academic institution if they wish to be an official representative of their academic institution.<br><br>
                             </p>
+
                         <h4 class="font-italic mb-4">Specification of Submissions</h4>
 
                                     The material submission requires the following items: team profile, survey, video and poster. <br><br>
 
-                                    1.  <b>TEAM PROFILE</b><br><br>
+                                     0. <b>TEAM PROFILE</b><br><br>
                                         <b>Content</b><br>
                                             - The team profile shall include 3-4 sentences and photo for each team member<br>
                                             - Team member CV (recommended)<br><br>
                                         <b>Format</b><br>
                                             - LinkedIn profile or PDF file<br>
                                             - Submit with <a href="https://forms.gle/bgz6WFqQuKFFSUdS7">Registrar II</a><br><br><br>
-                                    2. <b>SURVEY/PAPER</b><br><br>
+                                    1. <b>SURVEY/PAPER</b><br><br>
                                         <b>Content</b><br>
                                         The survey consists of 8 questions that guide the description of what the complete blockchain solution is. Answers may be multilingual but English must be present. If there are differences, the English version shall prevail. Below is the questionnaire:<br>
                                             - Describe your solution in 1 sentence.<br>
@@ -159,14 +241,14 @@
                                             - The survey shall be submitted as a <a href="https://affiliate.notion.so/ibcol-2023">Notion</a> page (use this <a href="https://block-chain.notion.site/Project-Name-A-Description-of-your-Solution-in-One-Sentence-ef4896238f8943019ec133f7aa7402c2?pvs=4">template</a>) and as a paper in IEEE format (use this <a href="https://docs.google.com/document/d/1ALSMpp6whV76rPEv03YAihN23mOlTnNXCZ5JGFdiQh0">paper sample</a>). Optional proposals can be uploaded, such as deck, paper, etc.<br>
                                             - PDF only; max 25 MB (tip: use PDF compressor)<br>
                                             - Submit with <a href="https://forms.gle/DoVbtmkypP2NkCeZ6">Registrar III: Material Submission</a><br><br><br>
-                                    3. <b>VIDEO</b><br><br>
+                                    2. <b>VIDEO</b><br><br>
                                         <b>Content</b><br>
                                             - The video shall be a 2-3 minutes presentation, and the content may be multilingual, but English must be one of the languages. Speech must be in English, or if an exception is granted, must be subtitled in English.<br>
                                             - Students may use these 3 minutes to present your project any way you like. For example, it could be a deck presentation or talking heads or a creative production.<br><br>
                                         <b>Format</b><br>
                                             - Youtube link of an unlisted video<br>
                                             - Submit with <a href="https://forms.gle/DoVbtmkypP2NkCeZ6">Registrar III: Material Submission</a><br><br><br>
-                                    4. <b>POSTER BOARD</b><br><br>
+                                    3. <b>POSTER BOARD</b><br><br>
                                         <b>Content</b><br>
                                             - The poster board will be a research poster to showcase at the IBCOL Finals, and may be multilingual, but English must be present. If there are differences, the English version shall prevail.<br><br>
                                         <b>Format</b><br>
@@ -175,13 +257,25 @@
                                             - Lichtenberg ratio (√2:1 ); <b>recommend A0 or A1 </b>  <br>
                                             - Prepare a <b>portrait</b> version (required) and a <b>landscape </b> version (recommended).<br>
                                             - Submit with <a href="https://forms.gle/DoVbtmkypP2NkCeZ6">Registrar III: Material Submission</a><br><br><br>
-
+                                            
+                                            
                                    <b>Note:</b> <br>
                                     - If your country/territory has a National Blockchain Olympiad Committee, take note of their submission timeline, as it would not be shown on this website.
                                     - If your country/territory has a National Blockchain Olympiad Committee, there may be additional materials required in one submission or in separate submissions.<br>
                                     - If your country or territory does not have a Competition Committee, submit directly to <a href="registrar.html">Registrar III</a> of the IBCOL 2023 Organising Committee.<br>
                                     - Partial submissions are allowed before a stated deadline but only complete submissions are evaluated after a stated deadline. If there are more than one copy of a material, the one with the latest version number shall be taken as the intended submission; if no version numbers were ever submitted, the material believed to be the latest version shall be considered the intended submission.<br>
+
+                                    <br>
+
+                                    <b>Country/Territory with Competitions Committee</b> <br>
+                                    Additionally, if your country or territory has a National Blockchain Olympiad Committee, contestants shall submit their materials directly to the committee, which would adjudicate proposals submitted within that country or territory, and nominate teams for IBCOL 2023. The National Committee shall submit a list of nominations to IBCOL 2023 Organising Committee.<br><br>
+    
+                                    <b>Country/Territory without Competitions Committee</b> <br>
+                                    Additionally, if your country or territory does not have a National Blockchain Olympiad Committee, contestants shall submit their materials directly to the IBCOL Committee for screening via the IBCOL website. The submission may attach official nomination letter from their academic institution if they wish to be an official representative of their academic institution.<br><br>
+
                             </p>
+
+
                     </div>
 
                     <div class="tab-pane fade shadow rounded bg-white p-5" style="color: black;" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
